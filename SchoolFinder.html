@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>School Finder</title>
+<link rel="stylesheet" href="css/home_page.css">
+<style>
+  body {
+    background-image: url('img/bg.jpg');
+  }
+</style> 
+
+</head>
+<body>   
+	<div class="headerContainer">
+    <header class="header" role="banner">
+     	<h3 class="row">
+       	<div class="col-xs-2 org-logo">
+       		<a><img src="img/Logo.png" width="576px" height="180px"></a>
+       	</div>
+        <button onclick="document.location='logout.php'" class="btn" style="float: right; width: 120px;height: 50px;  text-align: center;">Log Out</button>
+        
+     	<div class="col-xs-10 sitename">
+        <div class="headerText">Find My School</div>
+        
+      </div>
+      
+     	</h3>
+
+     </header>
+  </div>
+  	
+    <section id="search-container" role="search" controls="results-container" >
+    	<div class="jumbotron block-intro" id="search-start">
+       		<h1 tabindex="-1">Find a school</h1>
+       		<p class="lead">Search for your local school</p>
+       		
+
+       		<p>&nbsp;&nbsp;</p>
+       		<div class="row school-name-search">
+       			<div class="col-lg-12">
+       				<form action="school.php" method="post">
+       					<div class="input-group input-group-lg">
+       						<input id="txt" type="text" class="form-control" name="search" placeholder="Enter a school name" title="Type in a name" list="suggestions">
+                  <datalist id="suggestions">
+                    <option value="Arya School">
+                    <option value="Atmiya School">
+                    <option value="Innovative School">
+                    <option value="Masoom School">
+                    <option value="Rajkot Public School">
+                    <option value="Sarvodaya High School">
+                    <option value="Saint Pauls School">
+                    <option value="Dholakiya School">
+                    <option value="S N Kansagra School">
+                    <option value="Saint Marys School">
+                  </datalist>
+                  <span class="input-group-btn">
+                    <br><br><br>
+                  <input type="submit" value="Search" id="button-search-name" data-input="schoolname" class="btn search">
+                  </span>
+              	</div>
+              </form>
+          		</div>
+        	 </div>
+          </div>
+  	</section>
+    <footer class="footer">
+    	<h1>A project by the HUMAN CENTER DESIGN </h1>
+		<h4>JAY SAVLANI</h4>
+		<h4>GORAL GAJERA</h4>
+		<h4>YASH PATEL</h4>
+		<h4>We welcome all "
+		<a class="mTo" title="Question? Comments? Email us!" href="feedback_form.php">feedback
+		</a>
+		" about the School Finder 
+		</h4>
+	</footer>        
+	</body>
+</html>
